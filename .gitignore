@@ -1,0 +1,19 @@
+# Criar .gitignore
+@"
+.venv/
+*.xlsx
+*.xls
+*.csv
+.env
+config.py
+__pycache__/
+*.pyc
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
+
+# Criar requirements.txt
+@"
+streamlit==1.29.0
+pandas==2.1.3
+plotly==5.18.0
+openpyxl==3.1.2
+"@ | Out-File -FilePath requirements.txt -Encoding UTF8
